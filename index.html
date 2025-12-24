@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentic Landing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="background-canvas" aria-hidden="true"></canvas>
+    <main class="card" id="profile-card">
+      <div class="avatar-wrapper">
+        <img id="avatar" alt="Profile avatar" />
+      </div>
+      <div class="text-block">
+        <h1 id="name"></h1>
+        <p id="subtitle"></p>
+      </div>
+      <nav class="social-links" aria-label="Social links">
+        <a id="link-steam" class="icon-button" target="_blank" rel="noreferrer" aria-label="Steam profile">
+          <span class="icon steam"></span>
+        </a>
+        <a id="link-spotify" class="icon-button" target="_blank" rel="noreferrer" aria-label="Spotify profile">
+          <span class="icon spotify"></span>
+        </a>
+        <a id="link-discord-user" class="icon-button" target="_blank" rel="noreferrer" aria-label="Discord profile">
+          <span class="icon discord"></span>
+        </a>
+        <a id="link-discord-server" class="icon-button" target="_blank" rel="noreferrer" aria-label="Discord server invite">
+          <span class="icon discord"></span>
+        </a>
+      </nav>
+      <button class="audio-toggle" id="audio-toggle" aria-label="Toggle music">
+        <span class="ring"></span>
+        <span class="dot"></span>
+      </button>
+    </main>
+    <audio id="bg-music" loop></audio>
+    <script src="script.js" defer></script>
+  </body>
+</html>
